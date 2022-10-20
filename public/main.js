@@ -25,7 +25,7 @@ const grammarAlert5 = evt => {
 };
 
 const grammarAlert6 = evt => {
-    alert("This is not a directory, bit it is a d-Ear")
+    alert("This is not a directory, but, it is a d-Ear")
 };
 
 
