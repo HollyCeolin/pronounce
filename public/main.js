@@ -1,9 +1,12 @@
+const Rollbar = require("rollbar");
+
 let cinnamon = document.querySelector('img')
 let consonants = document.getElementById('cons')
 let continents = document.getElementById('continent')
 let synonym = document.getElementById('synonym')
 const grammarAlert1 = evt => {
     alert("It's pronounced sin-uh-mun, NOT synonym")
+    Rollbar.log("clicked")
 };
 
 const grammarAlert2 = evt => {

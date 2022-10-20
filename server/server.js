@@ -13,7 +13,7 @@ let rollbar = new Rollbar({
 
 
 rollbar.log("Hello world!");
-rollbar.log("Working")
+
 
 app.use(express.json())
 app.use(cors())
