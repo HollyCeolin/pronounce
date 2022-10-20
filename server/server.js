@@ -4,6 +4,17 @@ const path = require('path')
 
 const app = express()
 
+let Rollbar = require("rollbar");
+let rollbar = new Rollbar({
+  accessToken: 'c26cbf32fdd14f40979c3d8d2cab31b4',
+  captureUncaught: true,
+  captureUnhandledRejections: true
+});
+
+
+rollbar.log("Hello world!");
+rollbar.log('testing')
+
 app.use(express.json())
 app.use(cors())
 app.use(express.static('public'))
